@@ -1,0 +1,12 @@
+%table
+  %thead
+    %tr
+      %td Int
+      %td DivisibleBy
+  %tbody
+    - @numbers.each do |number|
+      %tr
+        %td= number
+        %td
+          Divisible by
+          = divisible_by(number)
